@@ -1,0 +1,15 @@
+$bodyColor:  #000000;
+$shadowColor: #000000;
+$shadowParameters: 5px 0 5px;
+$hoverColor: #3e8e41;
+$hColor: #fff;
+$buttonColor:#e03a3c;
+$transitionTime: 0.3s;
+$boxShadow:  0px 0 15px;
+$borderParam: 2px solid $hColor;
+$barWidth: 100%;
+
+@mixin addLeftRight($leftSize, $rightSize) {
+    left: $leftSize;
+    right: $rightSize;
+}

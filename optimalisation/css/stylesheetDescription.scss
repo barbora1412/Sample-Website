@@ -1,0 +1,83 @@
+@import "./variables.scss";
+#sekcia_obr {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  
+  #textPosun {
+    color: $bodyColor;
+  }
+  
+  .bi {
+    transition: $transitionTime;
+  
+    &:hover {
+      color: $hoverColor !important;
+    }
+  }
+  
+  #textObr .p {
+    color: $bodyColor;
+  }
+  
+  #sekciaObrUX {
+    padding-top: 5vh;
+    box-shadow: $shadowParameters $shadowColor;
+  }
+  
+  #greyBox {
+    background: #808080;
+    transition: $transitionTime;
+    box-shadow: $shadowParameters $shadowColor;
+    padding: 2vh 2vh 2vh 2vh;
+    border-radius: 6px;
+  
+    &:hover {
+      background: #acacac;
+      color: $bodyColor;
+    }
+  }
+  
+  .h1 {
+    font-size: 8rem;
+  }
+  
+  #containerObr {
+    display: block;
+  }
+  
+  #sekciaObrUX .h1 {
+    font-size: 8vh;
+    text-align: center;
+  }
+  
+  #sekcia_row2 {
+    justify-content: space-around;
+  }
+  
+  #img1 {
+    box-shadow: $shadowParameters #808080;
+    z-index: 1;
+  }
+  
+  #bulb {
+    text-shadow: $shadowParameters $shadowColor;
+  }
+  
+  #sekciaUXUI {
+    padding-top: 5vh;
+  }
+  
+  @media screen and (max-width: 751px) {
+    #hero {
+      height: 100vh;
+  
+      .container .row {
+        width: 0;
+      }
+    }
+  
+    #sekcia_obr .row {
+      margin-top: 10vh;
+    }
+  }

@@ -1,0 +1,18 @@
+@import "./variables.scss";
+body {
+    background: #e4f1c5;
+  }
+  
+  #img1 {
+    box-shadow: 5px 5px 5px #207738;
+  }
+  
+  #sekciaUXUI {
+    margin-left: 9vw;
+    margin-bottom: 5vh;
+  
+    .d-flex h1 {
+      font-size: 70px;
+      padding-top: 4vh;
+    }
+  }

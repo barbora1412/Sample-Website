@@ -1,0 +1,22 @@
+@import "./variables.scss";
+body {
+    background: #fff8d2;
+  }
+  
+  #img1 {
+    box-shadow: $shadowParameters $shadowColor;
+  }
+  
+  #container_row {
+    color: #ffffff;
+  }
+  
+  #sekciaUXUI {
+    margin-left: 16vw;
+    margin-bottom: 5vh;
+  
+    .d-flex h1 {
+      font-size: 70px;
+      padding-top: 5vh;
+    }
+  }

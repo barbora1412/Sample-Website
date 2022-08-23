@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+
+<html lang="sk">
+
+<head id="headDescription">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Description</title>
+    <meta content="Website" name="description">
+    <meta content="CSS, HTML, JS" name="keywords">
+
+    <link href="optimalisation/img/logo.png" rel="icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link href="optimalisation/css/stylesheet.css" rel="stylesheet">
+    <link href="optimalisation/css/stylesheetDescription.css" rel="stylesheet">
+    <link href="optimalisation/css/stylesheetHeroSection.css" rel="stylesheet" media="all">
+    <script src="optimalisation/js/scriptPicture.js"></script>
+    <script src="optimalisation/js/scriptCSS.js"></script>
+
+
+</head>
+<body onresize="functionChangeMargin();" onload="functionChangeMargin();" onkeydown="functionChangeStyle()">
+    <nav id="navBar" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"></span>
+            <a class="logo me-auto" href="index.html">
+                Cocktails
+            </a>
+
+            <div class="w-100 text-right">
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pictures.html" class="nav-link">Pictures</a>
+                </li>
+                <li class="nav-item">
+                    <a href="description.html" class="nav-link active">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a href="insert.html" class="nav-link">Zadanie2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main">
+        <section id="hero" class="d-flex align-items-center">
+
+            <div class="container flex-column flex-nowrap" data-aos="zoom-out" data-aos-delay="100">
+                <div class="row" style="width:80vw">
+                    <div class="col-xl-6">
+                        <h1>Časť so zmenami</h1>
+                        <h2 id="headerH2">Táto stránka slúži na popis informácií o vykonaných zmenách a obsahuje sekciu sekcia_zmena</h2>
+                        <a href="#sekcia_zmena"><i id="arrowDown" class="bi bi-arrow-down-circle-fill" style="font-size: 10vh; color:#e03a3c"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sekcia_zmena" style="color:#f7f7f7">
+            <div id="sekcia_obr" class="container p-2 align-items-center">
+                <div id="sekcia_row" class="row">
+                    <div class="col-lg-6 text-center align-items-center justify-content-center d-flex">
+
+                        <div id ="container_row" class="container  flex-column align-items-center justify-content-around ">
+                            <h1 style="color:black">Zmena veľkosti obrázka</h1>
+                            <p id="p2" style="color: black; margin-bottom: auto">
+                                Pri kliknutí na obrázok funkcia js function1() presunie obrázok na stred, zvačší ho 2x.
+                                Nevedela som ako presne to vycentrovanie bolo myslené, tak som to spravila tak, že obrázok bude stále v strede,
+                                aj pri skrolovaní.
+                                Ak na neho znova klikenete, vráti sa do pôvodnej pozície. Skript zaznamenáva počet klikov.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div id="textObr" class="col-lg-6 text-center align-items-center justify-content-center d-flex" style="height:80vh">
+                        <div id="firstCol" class="container flex-column align-items-center">
+
+
+                            <img id="img1" src="optimalisation/img/obr9.jpg" style="height:40vh" onclick="clicks++;function1();">
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sekciaObrUX" class="bg-dark">
+                <h1 id="zmena-js-funkcia" class="text-center">Zmena obsahu - js funkcia</h1>
+                <div class="container d-flex p-2 text-center flex-column justify-content-center align-items-center" style="height:50%">
+                    <div id="sekcia_row2" class="row">
+
+                        <div class=" col-lg-3 d-flex flex-column text-center align-items-center justify-content-around">
+                            <div id="greyBox" onmouseover="functionChangeStyle()">
+                                <p>Funkcia je volaná:</p>
+                                <div class="d-flex text-md-start flex-column">
+                                    <div class="d-flex flex-nowrap text-">
+                                        <i class="bi bi-arrow-right" style="padding-right:1vw"></i>
+                                        <p>onclick</p>
+                                    </div>
+                                    <div class="d-flex flex-nowrap">
+                                        <i class="bi bi-arrow-right" style="padding-right:1vw"></i> <p>onmouseover</p>
+                                        <p></p>
+                                    </div>
+                                    <div class="d-flex flex-nowrap">
+                                        <i class="bi bi-arrow-right" style="padding-right:1vw"></i> <p>onkeydown</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <p id="p1">
+                                Veľkosti sú zmenené pomocou functionChangeStyle().
+                                Onclick spôsob je aktivovaný kliknutím na žiarovku.
+                                Onmouseover spôsob je aktivovaný, ak sa dá kurzor na blok vľavo.
+                                Onkeydown je aktivovaný ľubovoľného tlačidla a nachádza sa v body.
+                                Čo sa zmenilo: Veľkosť textu, žiarovky, veľkosť obrázka.
+                            </p>
+                            <i id="bulb" class="bi bi-lightbulb-fill" style="font-size: 10vh; color: #e03a3c; height:10vh" onclick="functionChangeStyle()"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="sekciaUXUI" style="color:black">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="UXh1">UX/UI</h1>
+                    <ul>
+                        <li>Bootstrap ikonky</li>
+                        <li>Buttony, boxy, ktoré menia farbu</li>
+                        <li>Pri zmenenšení obrazovky vidno na hlavnom obrázku prostredný pohárik</li>
+                        <li>Stránka má ikonku, ktorá sa objavuje v záložke</li>
+                        <li>scriptCSS.js načíta rôzne css pre 1600px, 1300px,900px,700px</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="fixed-bottom">
+        <div class="container d-md-flex py-4 align-items-center">
+
+            <div id="copy_right" class="text-md-end  text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Barbora Královská</span></strong>. 2021
+                </div>
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:barbora.kralovska@student.tuke.sk">barbora.kralovska@student.tuke.sk</a>
+
+            </div>
+            <div id="social_buttons" class="social-links text-center text-md-end pt-md-0">
+                <a href="https://www.facebook.com/" class="btn social-icon button" data-abc="true"><i class="fa fa-facebook btn-round"></i></a>
+                <a href="https://twitter.com/?lang=en" class="btn social-icon button" data-abc="true"><i class="fa fa-twitter btn-round"></i></a>
+                <a href="https://www.instagram.com/" class="btn social-icon button" data-abc="true"><i class="fa fa-instagram btn-round"></i></a>
+                <a href="https://www.youtube.com/" class="btn social-icon button" data-abc="true"><i class="fa fa-youtube btn-round"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

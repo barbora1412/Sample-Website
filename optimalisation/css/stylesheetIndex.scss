@@ -1,0 +1,70 @@
+@import "./variables.scss";
+#main {
+    padding-bottom: 4rem;
+  }
+  
+  .icon-box {
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 6px;
+    background: #808080;
+    transition: $transitionTime;
+    height: 11rem;
+    box-shadow: $shadowParameters #eaeaea;
+  
+    &:hover {
+      background: #acacac;
+    }
+  
+    h4 {
+      margin-left: 70px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 23px;
+  
+      a {
+        color: $hColor;
+        transition: $transitionTime;
+      }
+    }
+  
+    .icon-box:hover h4 a {
+      color: $buttonColor;
+    }
+  
+    p {
+      margin-left: 70px;
+      line-height: 24px;
+      font-size: 14px;
+    }
+  }
+  
+  #hero .btn-o_stranke {
+    font-family: "Raleway", sans-serif;
+    box-shadow: 15px 15px 15px $shadowColor;
+    text-shadow: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 2vh 2vh;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 30px;
+    color: $hColor;
+    background: $buttonColor;
+    border: $buttonColor;
+    transition: $transitionTime;
+  
+    &:hover {
+      background-color: $hoverColor;
+      border: $hoverColor;
+      text-decoration: none;
+    }
+  }
+  
+  @media screen and (max-width: 751px) {
+    #main {
+      padding-bottom: 0rem;
+    }
+  }

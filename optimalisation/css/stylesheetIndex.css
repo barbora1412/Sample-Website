@@ -1,0 +1,76 @@
+#main {
+  padding-bottom: 4rem;
+}
+
+.icon-box {
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 6px;
+  background: #808080;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 11rem;
+  -webkit-box-shadow: 5px 0 5px #eaeaea;
+          box-shadow: 5px 0 5px #eaeaea;
+}
+
+.icon-box:hover {
+  background: #acacac;
+}
+
+.icon-box h4 {
+  margin-left: 70px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 23px;
+}
+
+.icon-box h4 a {
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icon-box .icon-box:hover h4 a {
+  color: #e03a3c;
+}
+
+.icon-box p {
+  margin-left: 70px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+#hero .btn-o_stranke {
+  font-family: "Raleway", sans-serif;
+  -webkit-box-shadow: 15px 15px 15px #000000;
+          box-shadow: 15px 15px 15px #000000;
+  text-shadow: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 2vh 2vh;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #e03a3c;
+  border: #e03a3c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#hero .btn-o_stranke:hover {
+  background-color: #3e8e41;
+  border: #3e8e41;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 751px) {
+  #main {
+    padding-bottom: 0rem;
+  }
+}
+/*# sourceMappingURL=stylesheetIndex.css.map */

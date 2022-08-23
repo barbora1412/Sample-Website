@@ -1,0 +1,176 @@
+@import "./variables.scss";
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: $bodyColor;
+  }
+  
+  #navBar {
+    position: sticky;
+    text-shadow: $boxShadow $shadowColor;
+    box-shadow: #343a40 0px 0px 15px;
+    top: 0;
+    width: $barWidth;
+    height: 10vw;
+    max-height: 40px;
+    height: 20vh;
+  }
+  
+  #myNavbar {
+    width: $barWidth;
+    background: #343a40;
+    padding-right: 1vw;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+    padding-bottom: 1rem !important;
+    padding-top: 1rem !important;
+  }
+  
+  .navbar-toggler {
+    max-height: 30px;
+  
+    .navbar-toggler-icon {
+      max-height: 3vw;
+      margin-bottom: 2px;
+    }
+  }
+  
+  #navBar .logo {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: $hColor;
+    font-family: "Poppins", sans-serif;
+  
+    &:hover {
+      color: $buttonColor;
+      text-decoration: none;
+      transition: $transitionTime;
+    }
+  }
+  
+  #myNavbar .navbar-nav .ul li {
+    background: $bodyColor;
+  }
+  
+  h1, h2 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .fixed-bottom {
+    position: sticky;
+  }
+  
+  #footer {
+    background: rgba(52, 58, 64, 1);
+    font-size: 13px;
+    box-shadow: 10px 0 15px $shadowColor;
+    color: $hColor;
+    bottom: 0;
+    @include addLeftRight();
+    margin-bottom: 0px;
+  
+    .container {
+      background: #343a40;
+      text-shadow: 15px 15px 30px $shadowColor;
+      width: 100%;
+    }
+  }
+  
+  .social-icon {
+    .fa {
+      text-align: center;
+      display: table-cell;
+      box-shadow: 0 0 10p $shadowColor;
+      vertical-align: middle;
+      width: 30px;
+      height: 30px !important;
+      line-height: 1;
+      font-size: 14px;
+      transition: all $transitionTime ease;
+      color: $hColor;
+      background: none;
+    }
+  
+    &:hover .fa {
+      opacity: 0.8;
+    }
+  
+    .fa-facebook {
+      background-color: #3b5998;
+    }
+  
+    .fa-twitter {
+      background-color: #00aced;
+    }
+  
+    .fa-youtube {
+      background-color: #bb0000;
+    }
+  
+    .fa-instagram {
+      background-color: #517fa4;
+    }
+  }
+  
+  .social-icon-large {
+    margin-right: 20px;
+  
+    .fa {
+      font-size: 25px;
+      background: transparent;
+      color: $bodyColor;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px !important;
+      line-height: 1;
+      -webkit-transition: all $transitionTime ease;
+      transition: all $transitionTime ease;
+    }
+  
+    &:hover {
+      .fa {
+        color: $hColor;
+      }
+  
+      .fa-facebook {
+        background-color: #3b5998;
+      }
+  
+      .fa-twitter {
+        background-color: #00aced;
+      }
+  
+      .fa-youtube {
+        background-color: #bb0000;
+      }
+  
+      .fa-instagram {
+        background-color: #517fa4;
+      }
+    }
+  }
+  
+  .btn-round {
+    border-radius: 4px !important;
+  }
+  
+  .btn.btn-large i {
+    font-size: 24px;
+  }
+  
+  @media screen and (max-width: 751px) {
+    #footer {
+      position: relative;
+    }
+  }

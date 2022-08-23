@@ -1,0 +1,19 @@
+body {
+  background: #e4f1c5;
+}
+
+#img1 {
+  -webkit-box-shadow: 5px 5px 5px #207738;
+          box-shadow: 5px 5px 5px #207738;
+}
+
+#sekciaUXUI {
+  margin-left: 9vw;
+  margin-bottom: 5vh;
+}
+
+#sekciaUXUI .d-flex h1 {
+  font-size: 70px;
+  padding-top: 4vh;
+}
+/*# sourceMappingURL=css1300.css.map */
